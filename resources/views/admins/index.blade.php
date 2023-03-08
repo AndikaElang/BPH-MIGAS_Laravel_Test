@@ -46,7 +46,7 @@
                             <td>{{$student->first_name}}</td>
                             <td>{{$student->last_name}}</td>
                             <td>{{$student->gender}}</td>
-                            <td>{{$student->selected_couses}}</td>
+                            <td>{{$student->selected_courses}}</td>
                             <td>
                                 <a href="{{ url('admins/accept/'.$student->nim) }}" class="btn btn-success btn-sm">Acc</a>
                                 <a href="{{ url('admins/decline/'.$student->nim) }}" class="btn btn-danger btn-sm">Dec</a>

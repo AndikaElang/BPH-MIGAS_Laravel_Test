@@ -12,7 +12,7 @@ class adminController extends Controller
      */
     public function index()
     {
-        $students = student::orderby('nim', 'desc')->where('status', '=', 'Awaiting')->paginate(5);
+        $students = student::orderby('nim', 'desc')->where('status', '=', 'Waiting')->paginate(5);
         return view('admins.index')->with('students', $students);
     }
 

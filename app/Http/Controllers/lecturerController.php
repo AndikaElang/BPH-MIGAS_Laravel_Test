@@ -12,7 +12,7 @@ class lecturerController extends Controller
      */
     public function index()
     {
-        $students = student::orderby('nim', 'desc')->where('status', '=', 'Accepted')->paginate(5);
+        $students = student::orderby('nim', 'desc')->where('status', '=', 'Accepted')->orwhere('status', '=', 'Declined')->paginate(5);
         return view('lecturers.index')->with('students', $students);
     }
 
